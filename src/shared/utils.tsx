@@ -171,6 +171,7 @@ export function readPacked(): BeachTile[] {
 export function getAllBeachTiles(): BeachTile[][][] {
     const packed = readPacked();
     const tiles: BeachTile[][][] = [];
+    let ind = 0;
 
     for (let i = 1; i <= 10000; i++) {
         const area = (tiles[i] = []);
@@ -179,7 +180,7 @@ export function getAllBeachTiles(): BeachTile[][][] {
             const rows = (area[row] = []);
 
             for (let col = 0; col < 10; col++) {
-                rows[col] = packed.shift();
+                rows[col] = packed[ind++];
             }
         }
     }
