@@ -34,7 +34,7 @@ function waves(rowsHidden: number, pixelHeight: number, goingOut: boolean) {
             >
                 <svg
                     width="100%"
-                    height="auto"
+                    height={pixelHeight}
                     viewBox="0 0 1000 1000"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#ffffff"
@@ -42,7 +42,7 @@ function waves(rowsHidden: number, pixelHeight: number, goingOut: boolean) {
                     <defs>
                         <path
                             id="wavepath"
-                            d="M 0 2000 0 500 Q 40.5 485 81 500 t 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0  v1000 z"
+                            d="M 0 2000 0 500 Q 40.5 485 81 500 t 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 81 0 v1000 z"
                         />
                         <path
                             id="motionpath"
